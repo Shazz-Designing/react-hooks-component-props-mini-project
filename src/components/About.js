@@ -1,11 +1,12 @@
 import React from "react";
+import logo from "../assets/logo";
 
 const About = ({ image, aboutText }) => {
   const defaultImage = "https://via.placeholder.com/215";
 
   return (
     <aside>
-        <img src={image || defaultImage} alt="blog logo" />
+        <img src={image || logo || defaultImage} alt="blog logo" />
         <p>{aboutText}</p>
     </aside>
   );
